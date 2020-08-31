@@ -1,0 +1,46 @@
+.m-promo-section {
+    padding-top: 90px;
+
+    .promo-description {
+        width: 420px;
+        margin-top: 160px;
+        padding-left: 30px;
+
+        h1 {
+            font-weight: bold;
+            font-size: 62px;
+            line-height: 70px;
+            margin-bottom: 40px;
+            padding-right: 80px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .promo-benefits {
+        margin: 10px 0;
+
+        .m-benefit-item {
+            padding: 0 33px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            p {
+                font-size: 22px;
+                line-height: 25px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .promo-img {
+        transform: translate(85px, 0);
+    }
+
+}

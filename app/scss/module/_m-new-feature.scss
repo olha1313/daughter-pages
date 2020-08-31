@@ -1,0 +1,49 @@
+@import "variables";
+
+.m-new-feature {
+    font-size: 22px;
+    line-height: 30px;
+
+    .item-content {
+        align-items: center;
+
+        .item-img {
+            width: 100%;
+        }
+
+        .img-ipad {
+            margin-left: 85px;
+        }
+
+        .img-phones {
+            margin-left: 35px;
+        }
+
+        .img-imac {
+            position: relative;
+            right: -264px;
+            top: 80px;
+            width: 110%;
+        }
+
+        .item-description{
+            h1 {
+                font-weight: bold;
+                font-size: 44px;
+                line-height: 50px;
+            }
+        }
+
+        .item-description-rentlar-leads {
+            margin-left: 160px;
+        }
+    }
+}
+
+.feature-get-leads {
+    margin: 180px 0 130px;
+}
+
+.feature-convert-leads {
+    margin-top: 120px;
+}

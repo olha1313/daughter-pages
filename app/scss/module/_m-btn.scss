@@ -1,0 +1,33 @@
+@import "../variables";
+
+.m-btn {
+    transition: all .3s ease-in-out;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.m-btn-signup {
+    padding: 11px 46px;
+    color: $color-white;
+    background-color: $color-orange;
+
+    &:active, &:focus, &:hover {
+        background-color: $color-dark-orange;
+    }
+}
+
+.m-btn-select {
+    border: 2px solid $color-light-orange;
+    font-weight: bold;
+    color: $color-light-orange;
+    padding: 12px 50px;
+    z-index: 5;
+    position: relative;
+
+    &:active, &:focus, &:hover {
+        background-color: $color-light-orange;
+        color: $color-white;
+    }
+}

@@ -1,0 +1,21 @@
+@import "../variables";
+
+.m-item-link {
+    color: $color-green;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+
+    &::after{
+        content: '\f105';
+        position: relative;
+        top: 1px;
+        margin-left: 6px;
+        font-family: font-icon;
+    }
+
+    &:active, &:focus, &:hover {
+        color: $color-dark-green;
+        transition: color .2s ease 0s;
+    }
+}

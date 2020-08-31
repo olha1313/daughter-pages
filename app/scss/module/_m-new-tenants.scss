@@ -1,0 +1,25 @@
+@import '../variables';
+
+.m-new-tenants {
+    color: $color-white;
+    font-size: 22px;
+    line-height: 30px;
+    position: relative;
+    margin: 150px 0 150px;
+
+    .new-tenants-img {
+        width: 100%;
+    }
+
+    .new-tenants-description {
+        position: absolute;
+        text-align: center;
+        top: 90px;
+        left: 25vw;
+
+        p {
+            max-width: 700px;
+            margin-top: 32px;
+        }
+    }
+}
