@@ -1,16 +1,43 @@
+@import "../variables";
+
 .m-get-started {
     text-align: center;
 
-    .get-started-title{
-        font-weight: bold;
+    .get-started-title {
+        font-family: 'Proxima Nova Bold', sans-serif;
         font-size: 44px;
         line-height: 50px;
         margin: 0;
+        padding: 0;
+        color: $color-black;
+        @media #{$breakpoint-phone} {
+            font-size: 31px;
+            line-height: 35px;
+            padding: 0 20px 16px;
+        }
     }
 
-    .get-started-description {
+    .get-started-description-desktop {
         font-size: 22px;
         line-height: 30px;
         margin: 0;
+        display: block;
+        color: $color-black;
+        @media #{$breakpoint-phone} {
+            font-size: 16px;
+            line-height: 22px;
+            display: none;
+        }
+    }
+
+    .get-started-description-mobile {
+        display: none;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+        color: $color-black;
+        @media #{$breakpoint-phone} {
+            display: block;
+        }
     }
 }

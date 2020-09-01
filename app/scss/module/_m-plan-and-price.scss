@@ -3,52 +3,76 @@
 .m-plan-and-price {
     position: relative;
 
-    .plan-and-price-title {
-        font-weight: bold;
-        font-size: 44px;
-        line-height: 50px;
-        text-align: center;
-        margin: 0 0 14px;
-    }
-
-    .choose-plan {
-        font-size: 22px;
-        line-height: 30px;
-        text-align: center;
-        margin: 0 0 58px;
-    }
-
-    .select-plan {
-        position: absolute;
-        right: 0;
-        top: 58px;
-        box-shadow: 0px 2px 10px rgba(213, 213, 213, 0.5);
-        background-color: $color-white;
-        padding: 12px 0;
-        border-radius: 21.5px;
-        color: $color-light-blue;
-
-        input[type="radio"] {
-            display: none;
+    .type-of-plan {
+        display: block;
+        @media #{$breakpoint-phone} {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
 
-        label {
-            padding: 11px 22px;
+        .plan-and-price-title {
+            font-family: 'Proxima Nova Bold', sans-serif;
+            font-size: 44px;
+            line-height: 50px;
+            text-align: center;
+            margin: 0 0 14px;
+            @media #{$breakpoint-phone} {
+                font-size: 31px;
+                line-height: 35px;
+                margin: 0;
+            }
+        }
+
+        .choose-plan {
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            margin: 0 0 58px;
+            @media #{$breakpoint-phone} {
+                font-size: 16px;
+                line-height: 22px;
+                margin: 0 0 55px;
+            }
+        }
+
+        .select-plan {
+            position: absolute;
+            right: 0;
+            top: 58px;
+            box-shadow: 0px 2px 10px rgba(213, 213, 213, 0.5);
+            background-color: $color-white;
+            padding: 12px 0;
             border-radius: 21.5px;
-            position: relative;
-            transition: .5s;
-            cursor: pointer;
-        }
+            color: $color-light-blue;
+            @media #{$breakpoint-phone} {
+                position: static;
+                margin-bottom: 60px;
+            }
 
-        .select-title {
-            font-weight: bold;
-            font-size: 16px;
-            margin: 0;
-        }
+            input[type="radio"] {
+                display: none;
+            }
 
-        input[type="radio"]:checked + label {
-            background-color: $color-green;
-            color: $color-white;
+            label {
+                padding: 11px 22px;
+                border-radius: 21.5px;
+                position: relative;
+                transition: .5s;
+                cursor: pointer;
+            }
+
+            .select-title {
+                font-weight: bold;
+                font-size: 16px;
+                margin: 0;
+            }
+
+            input[type="radio"]:checked + label {
+                background-color: $color-green;
+                color: $color-white;
+            }
         }
     }
 
@@ -56,5 +80,8 @@
         margin: 60px auto 300px;
         font-size: 22px;
         line-height: 27px;
+        @media #{$breakpoint-phone} {
+            margin: 0 auto 145px;
+        }
     }
 }

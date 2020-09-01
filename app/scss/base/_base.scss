@@ -12,6 +12,17 @@
 }
 
 @font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('../../font/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNovaBold'),
+		url('../../font/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../font/ProximaNova-Bold.woff') format('woff'),
+		url('../../font/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'font-icon';
 	src: url('../font/font-icon.eot?52933203');
 	src: url('../font/font-icon.eot?52933203#iefix') format('embedded-opentype'),
@@ -29,6 +40,11 @@ body {
 	overflow-x: hidden;
 }
 
-a:hover {
-	cursor: pointer;
+a {
+	text-decoration: none;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
+

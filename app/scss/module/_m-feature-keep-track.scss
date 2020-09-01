@@ -2,11 +2,17 @@
 
     .keep-track-title {
         text-align: center;
+        font-family: 'Proxima Nova Bold', sans-serif;
         font-size: 44px;
         line-height: 50px;
         max-width: 500px;
         margin: 150px auto 0;
-        font-weight: bold;
+        @media #{$breakpoint-phone} {
+            font-size: 31px;
+            line-height: 35px;
+            text-align: left;
+            margin: 50px 0 0 0;
+        }
     }
 
     .keep-track-description {
@@ -15,20 +21,38 @@
         line-height: 30px;
         max-width: 550px;
         margin: 19px auto 65px;
+        @media #{$breakpoint-phone} {
+            font-size: 16px;
+            line-height: 22px;
+            text-align: left;
+            margin: 19px auto 35px;
+        }
     }
 
-    .m-keep-track-item {
-        font-weight: bold;
+    .keep-track-item {
+        font-family: 'Proxima Nova Bold', sans-serif;
         display: flex;
+        padding: 0;
 
         img {
-            margin: 0 26px 60px 0;
+            margin: 10px 26px 60px 0;
+            width: 30%;
+            height: auto;
+            @media #{$breakpoint-phone} {
+                width: 13%;
+                margin: 0 26px 28px 16px;
+            }
         }
 
         p {
-            margin: 17px 30px 0 0;
+            margin: 17px 25px 0 0;
             font-size: 22px;
             line-height: 30px;
+            @media #{$breakpoint-phone} {
+                margin: 0 10px 0 0;
+                font-size: 16px;
+                line-height: 18px;
+            }
         }
     }
 }

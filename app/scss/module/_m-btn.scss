@@ -22,9 +22,11 @@
     border: 2px solid $color-light-orange;
     font-weight: bold;
     color: $color-light-orange;
-    padding: 12px 50px;
+    padding: 12px 51px;
     z-index: 5;
-    position: relative;
+    @media #{$breakpoint-phone} {
+        padding: 6px 19px;
+    }
 
     &:active, &:focus, &:hover {
         background-color: $color-light-orange;

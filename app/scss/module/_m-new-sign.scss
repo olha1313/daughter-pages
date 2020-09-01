@@ -1,11 +1,16 @@
+@import "../variables";
+
 .m-new-sign {
     margin-top: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    @media #{$breakpoint-phone} {
+        margin-top: 25px;
+    }
 
-    .sign-input {
+    .sign-input-desktop {
         background: $color-white;
         border: 2px solid $color-light-orange;
         box-sizing: border-box;
@@ -15,13 +20,39 @@
         line-height: 19px;
         color: $color-grey;
         border-right: 0 solid;
-        padding: 13px 60px 9px 15px;
+        padding: 14px 60px 10px 15px;
         outline: none;
+        display: inline-block;
+        @media #{$breakpoint-phone} {
+            display: none;
+        }
+    }
+
+    .sign-input-mobile {
+        background: $color-white;
+        border: 2px solid $color-light-orange;
+        box-sizing: border-box;
+        border-radius: 5px 0 0 5px;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-grey;
+        border-right: 0 solid;
+        padding: 14px 60px 10px 15px;
+        outline: none;
+        display:none;
+        @media #{$breakpoint-phone} {
+            padding: 14px 0 10px 7px;
+            display: inline-block;
+        }
     }
 
     a {
-        padding: 13px 46px;
+        padding: 14px 46px;
         background: $color-light-orange;
         border-radius: 0px 4px 4px 0px;
+        @media #{$breakpoint-phone} {
+            padding: 14px 23px;
+        }
     }
 }

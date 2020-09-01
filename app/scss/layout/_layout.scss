@@ -1,6 +1,11 @@
+@import "../variables";
+
 .container {
     margin: 0 auto;
     max-width: 1160px;
+    @media #{$breakpoint-phone} {
+        padding: 0 18px;
+    }
 }
 
 .container-small {
@@ -16,24 +21,37 @@
     position: relative;
 }
 
-.bg {
+.bg-desktop {
     position: absolute;
     z-index: -1;
+    display: block;
+    @media #{$breakpoint-phone} {
+        display: none;
+    }
 }
 
 .bg-ovals-bloc-1 {
     top: 90px;
-    left: 385px;
+    left: 410px;
+    @media #{$breakpoint-desktop} {
+        left: 370px;
+    }
 }
 
 .bg-right-bloc-1 {
     right: 0;
     top: 0;
+    @media #{$breakpoint-desktop} {
+        right: -55px;
+    }
 }
 
 .bg-left-bloc-1 {
     left: 0;
     top: 600px;
+    @media #{$breakpoint-desktop} {
+        left: -55px;
+    }
 }
 
 .bg-right-bloc-3 {
@@ -44,20 +62,64 @@
 .bg-right-bloc-4 {
     right: 0;
     top: -100px;
+    @media #{$breakpoint-desktop} {
+        right: -60px;
+    }
 }
 
 .bg-left-bloc-5 {
     left: 0;
     top: -20px;
+    @media #{$breakpoint-desktop} {
+        left: -45px;
+        top: -55px;
+    }
 }
 
 .bg-right-bloc-6 {
     right: 0;
-    top: -95px;
+    top: -55px;
+    @media #{$breakpoint-desktop} {
+        right: -10px;
+    }
 }
 
 .bg-center-bloc-8 {
     top: -200px;
+}
+
+.bg-mobile {
+    position: absolute;
+    z-index: -1;
+    display: none;
+    @media #{$breakpoint-phone} {
+        display: block;
+    }
+}
+
+.bg-mobile-center-bloc-1 {
+    top: 30px;
+    left: -45px;
+}
+
+.bg-mobile-left-bloc-1 {
+    left: 0;
+    top: 728px;
+}
+
+.bg-mobile-left-bloc-4 {
+    left: -38px;
+    top: 180px;
+}
+
+.bg-mobile-right-bloc-7 {
+    right: 0;
+    top: -385px;
+}
+
+.bg-mobile-center-bloc-8 {
+    top: -150px;
+    left: -560px;
 }
 
 #best-value {

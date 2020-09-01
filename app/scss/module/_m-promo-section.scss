@@ -1,23 +1,63 @@
+@import "../variables";
+
 .m-promo-section {
-    padding-top: 90px;
+    padding-top: 50px;
 
     .promo-description {
-        width: 420px;
+        width: 460px;
         margin-top: 160px;
         padding-left: 30px;
+        @media #{$breakpoint-phone} {
+            width: 270px;
+            margin: 50px auto 0;
+            padding: 0;
+            text-align: center;
+        }
 
         h1 {
+            font-family: 'Proxima Nova Bold', sans-serif;
             font-weight: bold;
             font-size: 62px;
             line-height: 70px;
             margin-bottom: 40px;
             padding-right: 80px;
+            @media #{$breakpoint-phone} {
+                font-size: 44px;
+                line-height: 50px;
+                padding: 0;
+                margin-bottom: 0;
+            }
         }
 
         p {
             font-size: 22px;
             line-height: 30px;
             margin-bottom: 40px;
+            @media #{$breakpoint-phone} {
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    .promo-img-desktop {
+        transform: translate(85px, 0);
+        width: 100%;
+        @media #{$breakpoint-phone} {
+            display: none;
+        }
+    }
+
+    .promo-img-mobile {
+        width: 100%;
+        height: auto;
+        display: none;
+        margin: 0;
+        @media #{$breakpoint-phone} {
+            display: block;
+            margin: 62px 0 155px;
+
         }
     }
 
@@ -25,22 +65,24 @@
         margin: 10px 0;
 
         .m-benefit-item {
-            padding: 0 33px;
+            padding: 0 34px;
             display: flex;
             align-items: center;
             flex-direction: column;
             text-align: center;
+            @media #{$breakpoint-phone} {
+                padding: 0 15px;
+            }
 
             p {
                 font-size: 22px;
                 line-height: 25px;
                 font-weight: bold;
+                @media #{$breakpoint-phone} {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
             }
         }
     }
-
-    .promo-img {
-        transform: translate(85px, 0);
-    }
-
 }

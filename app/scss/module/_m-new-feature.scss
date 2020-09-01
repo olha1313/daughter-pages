@@ -6,13 +6,26 @@
 
     .item-content {
         align-items: center;
+        margin-left: 0;
+        margin-right: 0;
 
         .item-img {
             width: 100%;
         }
 
+        .img-photo {
+            margin: 0;
+            @media #{$breakpoint-phone} {
+                margin: 35px 0 45px;
+            }
+        }
+
         .img-ipad {
             margin-left: 85px;
+            @media #{$breakpoint-phone} {
+                margin: 63px 0 0 2px;
+                width: 175%;
+            }
         }
 
         .img-phones {
@@ -21,29 +34,81 @@
 
         .img-imac {
             position: relative;
-            right: -264px;
+            right: -160px;
             top: 80px;
-            width: 110%;
+            width: 120%;
+            @media #{$breakpoint-phone} {
+                display: none;
+            }
         }
 
         .item-description{
+            @media #{$breakpoint-phone} {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
             h1 {
-                font-weight: bold;
+                font-family: 'Proxoma Nova Bold', sans-serif;
                 font-size: 44px;
                 line-height: 50px;
+                @media #{$breakpoint-phone} {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+
+            p {
+                color: $color-blue;
+                @media #{$breakpoint-phone} {
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding-right: 16px;
+                    color: $color-dark-black;
+                }
             }
         }
 
         .item-description-rentlar-leads {
             margin-left: 160px;
+            @media #{$breakpoint-phone} {
+                margin-left: 0;
+            }
         }
     }
 }
 
 .feature-get-leads {
-    margin: 180px 0 130px;
+    margin-top: 180px;
+    @media #{$breakpoint-phone} {
+        margin-top: 20px;
+    }
+}
+
+.feature-rentlar-leads-desktop {
+    margin-top: 130px;
+    display: block;
+    @media #{$breakpoint-phone} {
+        display: none;
+    }
+}
+
+.feature-rentlar-leads-mobile {
+    display: none;
+    margin-top: 100px;
+
+    .img-phones-mobile {
+        width: 100%;
+        margin-top: 85px;
+    }
+    @media #{$breakpoint-phone} {
+        display: block;
+    }
 }
 
 .feature-convert-leads {
-    margin-top: 120px;
+    margin-top: 140px;
+    @media #{$breakpoint-phone} {
+        margin-top: 20px;
+    }
 }

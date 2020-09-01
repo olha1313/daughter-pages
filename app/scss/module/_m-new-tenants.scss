@@ -6,9 +6,24 @@
     line-height: 30px;
     position: relative;
     margin: 150px 0 150px;
+    @media #{$breakpoint-phone} {
+        margin: 35px 0 70px;
+    }
 
     .new-tenants-img {
         width: 100%;
+        display: block;
+        @media #{$breakpoint-phone} {
+            display: none;
+        }
+    }
+
+    .new-tenants-img-mobile {
+        width: 100%;
+        display: none;
+        @media #{$breakpoint-phone} {
+            display: block;
+        }
     }
 
     .new-tenants-description {
@@ -16,10 +31,27 @@
         text-align: center;
         top: 90px;
         left: 25vw;
+        @media #{$breakpoint-phone} {
+            top: 165px;
+            left: 20px;
+        }
+
+        h1 {
+            font-family: 'Proxima Nova Bold', sans-serif;
+            font-size: 44px;
+            line-height: 50px;
+            @media #{$breakpoint-phone} {
+                font-size: 31px;
+                line-height: 35px;
+            }
+        }
 
         p {
             max-width: 700px;
             margin-top: 32px;
+            @media #{$breakpoint-phone} {
+                display: none;
+            }
         }
     }
 }
