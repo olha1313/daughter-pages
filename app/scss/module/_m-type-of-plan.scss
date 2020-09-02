@@ -48,7 +48,7 @@
 
     .plan-price {
         text-align: center;
-        padding: 45px 0 80px;
+        padding: 45px 0 10px;
         margin-bottom: 0;
         color: color-blue;
         @media #{$breakpoint-phone} {
@@ -81,7 +81,7 @@
             }
         }
 
-        .monthly {
+        .payment-frequency {
             font-family: 'Proxima Nova Bold', sans-serif;
             font-size: 31px;
             line-height: 35px;
@@ -89,6 +89,44 @@
                 font-size: 22px;
                 line-height: 25px;
             }
+        }
+    }
+
+    .plan-sale {
+        text-align: center;
+        padding-bottom: 42px;
+        visibility: hidden;
+        position: relative;
+
+        @media #{$breakpoint-phone} {
+            position: absolute;
+            right: 17px;
+            top: 40px;
+        }
+
+        span {
+            font-size: 22px;
+            line-height: 30px;
+            color: $color-dark-grey;
+            position: relative;
+            display: inline-block;
+            width: 77px;
+
+
+            &::after {
+                display: inline-block;
+                content: '';
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 43%;
+                border-bottom: solid 2px $color-dark-grey;
+
+            }
+        }
+
+        .plan-sale-free::after {
+            display: none;
         }
     }
 

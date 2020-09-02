@@ -196,7 +196,7 @@
                         <h1 class="plan-and-price-title">Plans &amp; Pricing</h1>
                         <p class="choose-plan">Choose your TenantCloud plan</p>
 
-                        <div class="select-plan">
+                        <form name="select-plan" class="select-plan">
                             <input type="radio" name="type-of-plan" value="annually" id="type-annually">
                             <label for="type-annually">
                                 <span class="select-title">Annually</span>
@@ -205,7 +205,7 @@
                             <label for="type-monthly">
                                 <span class="select-title">Monthly</span>
                             </label>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="row">
@@ -219,7 +219,10 @@
                             <div class="plan-price">
                                 <span class="dollar-sign">&#36;</span>
                                 <span class="price">0</span>
-                                <span class="monthly">/m</span>
+                                <span class="payment-frequency">/m</span>
+                            </div>
+                            <div class="plan-sale">
+                                <span class="plan-sale-free">still free</span>
                             </div>
                             <div class="plan-and-price-btn">
                                 <a href="#" class="m-btn m-btn-select">Select</a>
@@ -238,8 +241,11 @@
                             </div>
                             <div class="plan-price">
                                 <span class="dollar-sign">&#36;</span>
-                                <span class="price">35</span>
-                                <span class="monthly">/m</span>
+                                <span class="price" id="price-advanced">35</span>
+                                <span class="payment-frequency">/m</span>
+                            </div>
+                            <div class="plan-sale">
+                                <span>&#36; 420</span>
                             </div>
                             <div class="plan-and-price-btn">
                                 <a href="#" class="m-btn m-btn-select">Select</a>
@@ -255,8 +261,11 @@
                             </div>
                             <div class="plan-price">
                                 <span class="dollar-sign">&#36;</span>
-                                <span class="price">9</span>
-                                <span class="monthly">/m</span>
+                                <span class="price" id="price-standard">9</span>
+                                <span class="payment-frequency">/m</span>
+                            </div>
+                            <div class="plan-sale">
+                                <span>&#36; 108</span>
                             </div>
                             <div class="plan-and-price-btn">
                                 <a href="#" class="m-btn m-btn-select">Select</a>
@@ -290,7 +299,6 @@
                 </div>
             </div>
         </section>
-		<script src="js/anime.min.js"></script>
-		<script src="js/main.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
