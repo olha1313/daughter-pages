@@ -36,7 +36,7 @@
             @media #{$breakpoint-phone} {
                 font-size: 16px;
                 line-height: 22px;
-                margin-bottom: 60px;
+                margin-bottom: 50px;
             }
         }
     }
@@ -44,6 +44,7 @@
     .promo-img-desktop {
         transform: translate(85px, 0);
         width: 100%;
+        height: auto;
         @media #{$breakpoint-phone} {
             display: none;
         }

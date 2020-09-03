@@ -9,6 +9,7 @@
 }
 
 .m-btn-signup {
+    display: inline-block;
     padding: 11px 46px;
     color: $color-white;
     background-color: $color-orange;
@@ -24,6 +25,7 @@
     color: $color-light-orange;
     padding: 12px 51px;
     z-index: 5;
+    display: inline-block;
     @media #{$breakpoint-phone} {
         padding: 6px 19px;
     }

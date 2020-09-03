@@ -4,75 +4,70 @@
     font-size: 22px;
     line-height: 30px;
 
-    .item-content {
-        align-items: center;
-        margin-left: 0;
-        margin-right: 0;
+    .item-img {
+        width: 100%;
+        height: auto;
+    }
 
-        .item-img {
+    .img-photo {
+        width: 90%;
+        height: auto;
+        margin: 0;
+        @media #{$breakpoint-phone} {
+            margin: 35px 0 45px;
             width: 100%;
         }
+    }
 
-        .img-photo {
-            margin: 0;
-            @media #{$breakpoint-phone} {
-                margin: 35px 0 45px;
-            }
+    .img-ipad {
+        margin-left: 85px;
+        @media #{$breakpoint-phone} {
+            margin: 63px 0 0 2px;
+            width: 175%;
+            height: auto;
         }
+    }
 
-        .img-ipad {
-            margin-left: 85px;
-            @media #{$breakpoint-phone} {
-                margin: 63px 0 0 2px;
-                width: 175%;
-            }
+    .img-phones {
+        margin-left: 35px;
+        width: 60%;
+        height: auto;
+    }
+
+    .img-imac {
+        position: relative;
+        right: -160px;
+        top: 80px;
+        width: 120%;
+        height: auto;
+        @media #{$breakpoint-phone} {
+            display: none;
         }
+    }
 
-        .img-phones {
-            margin-left: 35px;
-        }
-
-        .img-imac {
-            position: relative;
-            right: -160px;
-            top: 80px;
-            width: 120%;
-            @media #{$breakpoint-phone} {
-                display: none;
-            }
-        }
-
-        .item-description{
-            @media #{$breakpoint-phone} {
-                padding-left: 0;
-                padding-right: 0;
-            }
+    .item-description {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
             h1 {
-                font-family: 'Proxoma Nova Bold', sans-serif;
-                font-size: 44px;
-                line-height: 50px;
-                @media #{$breakpoint-phone} {
-                    font-size: 30px;
-                    line-height: 35px;
-                }
-            }
-
-            p {
-                color: $color-blue;
-                @media #{$breakpoint-phone} {
-                    font-size: 16px;
-                    line-height: 22px;
-                    padding-right: 16px;
-                    color: $color-dark-black;
-                }
+            font-family: 'Proxoma Nova Bold', sans-serif;
+            font-size: 44px;
+            line-height: 50px;
+            @media #{$breakpoint-phone} {
+                font-size: 30px;
+                line-height: 35px;
             }
         }
 
-        .item-description-rentlar-leads {
-            margin-left: 160px;
+        p {
+            color: $color-blue;
             @media #{$breakpoint-phone} {
-                margin-left: 0;
+                font-size: 16px;
+                line-height: 22px;
+                padding-right: 16px;
+                color: $color-dark-black;
             }
         }
     }

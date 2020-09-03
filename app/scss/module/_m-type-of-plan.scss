@@ -94,7 +94,7 @@
 
     .plan-sale {
         text-align: center;
-        padding-bottom: 42px;
+        padding-bottom: 30px;
         visibility: hidden;
         position: relative;
 
@@ -132,13 +132,13 @@
 
     .plan-and-price-btn {
         text-align: center;
-        padding-bottom: 80px;
+        padding-bottom: 68px;
         position: relative;
         @media #{$breakpoint-phone} {
             padding-bottom: 0;
             position: absolute;
             right: 12px;
-            bottom: 45px;
+            bottom: 33px;
         }
     }
 }

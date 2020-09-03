@@ -28,6 +28,10 @@
     @media #{$breakpoint-phone} {
         display: none;
     }
+
+    img {
+        width: 100%;
+    }
 }
 
 .bg-ovals-bloc-1 {

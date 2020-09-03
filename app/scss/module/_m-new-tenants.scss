@@ -12,6 +12,7 @@
 
     .new-tenants-img {
         width: 100%;
+        height: auto;
         display: block;
         @media #{$breakpoint-phone} {
             display: none;
@@ -20,6 +21,7 @@
 
     .new-tenants-img-mobile {
         width: 100%;
+        height: auto;
         display: none;
         @media #{$breakpoint-phone} {
             display: block;
