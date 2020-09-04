@@ -5,7 +5,10 @@
     font-size: 22px;
     line-height: 30px;
     position: relative;
-    margin: 150px 0 150px;
+    margin: 150px 0;
+    @media #{$breakpoint-ipad-pro} {
+        margin: 50px 0 150px;
+    }
     @media #{$breakpoint-phone} {
         margin: 35px 0 70px;
     }
@@ -33,6 +36,10 @@
         text-align: center;
         top: 90px;
         left: 25vw;
+        @media #{$breakpoint-ipad-pro} {
+            top: 60px;
+            left: 15vw;
+        }
         @media #{$breakpoint-phone} {
             top: 165px;
             left: 20px;
@@ -42,6 +49,10 @@
             font-family: 'Proxima Nova Bold', sans-serif;
             font-size: 44px;
             line-height: 50px;
+            @media #{$breakpoint-ipad} {
+                font-size: 36px;
+                line-height: 40px;
+            }
             @media #{$breakpoint-phone} {
                 font-size: 31px;
                 line-height: 35px;
@@ -51,7 +62,7 @@
         p {
             max-width: 700px;
             margin-top: 32px;
-            @media #{$breakpoint-phone} {
+            @media #{$breakpoint-ipad} {
                 display: none;
             }
         }

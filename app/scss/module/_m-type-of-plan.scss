@@ -50,13 +50,15 @@
         text-align: center;
         padding: 45px 0 10px;
         margin-bottom: 0;
-        color: color-blue;
+        color: $color-blue;
+        @media #{$breakpoint-ipad} {
+            padding: 25px 0 10px;
+        }
         @media #{$breakpoint-phone} {
             padding: 0 0 24px 25px;
             text-align: left;
             margin-bottom: 46px;
             color: $color-light-black;
-
         }
 
         .dollar-sign {
@@ -65,6 +67,10 @@
             line-height: 50px;
             position: relative;
             top: -13px;
+            @media #{$breakpoint-ipad} {
+                font-size: 38px;
+                line-height: 40px;
+            }
             @media #{$breakpoint-phone} {
                 font-size: 22px;
                 line-height: 25px;
@@ -75,6 +81,10 @@
             font-weight: bold;
             font-size: 87px;
             line-height: 100px;
+            @media #{$breakpoint-ipad} {
+                font-size: 70px;
+                line-height: 75px;
+            }
             @media #{$breakpoint-phone} {
                 font-size: 62px;
                 line-height: 70px;
@@ -85,6 +95,10 @@
             font-family: 'Proxima Nova Bold', sans-serif;
             font-size: 31px;
             line-height: 35px;
+            @media #{$breakpoint-ipad} {
+                font-size: 28px;
+                line-height: 30px;
+            }
             @media #{$breakpoint-phone} {
                 font-size: 22px;
                 line-height: 25px;
@@ -134,6 +148,9 @@
         text-align: center;
         padding-bottom: 68px;
         position: relative;
+        @media #{$breakpoint-ipad} {
+            padding-bottom: 40px;
+        }
         @media #{$breakpoint-phone} {
             padding-bottom: 0;
             position: absolute;

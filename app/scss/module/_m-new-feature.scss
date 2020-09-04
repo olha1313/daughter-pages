@@ -9,22 +9,34 @@
         height: auto;
     }
 
-    .img-photo {
-        width: 90%;
-        height: auto;
-        margin: 0;
-        @media #{$breakpoint-phone} {
-            margin: 35px 0 45px;
-            width: 100%;
+    .container-img {
+        display: block;
+        height: 100%;
+        @media #{$breakpoint-ipad-pro} {
+            display: flex;
+            align-items: center;
         }
-    }
 
-    .img-ipad {
-        margin-left: 85px;
-        @media #{$breakpoint-phone} {
-            margin: 63px 0 0 2px;
-            width: 175%;
+        .img-photo {
+            width: 90%;
             height: auto;
+            margin: 0;
+            @media #{$breakpoint-phone} {
+                margin: 35px 0 45px;
+                width: 100%;
+            }
+        }
+
+        .img-ipad {
+            margin-left: 85px;
+            @media #{$breakpoint-ipad-pro} {
+                margin-left: 0;
+            }
+            @media #{$breakpoint-phone} {
+                margin: 63px 0 0 2px;
+                width: 175%;
+                height: auto;
+            }
         }
     }
 
@@ -34,16 +46,23 @@
         height: auto;
     }
 
-    .img-imac {
+    .container-img-imac {
         position: relative;
-        right: -160px;
-        top: 80px;
-        width: 120%;
-        height: auto;
-        @media #{$breakpoint-phone} {
-            display: none;
+        .img-imac {
+            position: relative;
+            right: -160px;
+            top: 80px;
+            width: 120%;
+            height: auto;
+            @media #{$breakpoint-ipad-pro} {
+                top: 0;
+            }
+            @media #{$breakpoint-phone} {
+                display: none;
+            }
         }
     }
+
 
     .item-description {
         height: 100%;
@@ -51,10 +70,17 @@
         flex-direction: column;
         justify-content: center;
 
-            h1 {
+        h1 {
             font-family: 'Proxoma Nova Bold', sans-serif;
             font-size: 44px;
             line-height: 50px;
+            @media #{$breakpoint-ipad-pro} {
+                margin-top: 0;
+            }
+            @media #{$breakpoint-ipad} {
+                font-size: 36px;
+                line-height: 42px;
+            }
             @media #{$breakpoint-phone} {
                 font-size: 30px;
                 line-height: 35px;
@@ -62,7 +88,14 @@
         }
 
         p {
+            font-size: 22px;
+            line-height: 30px;
             color: $color-blue;
+            padding-right: 0;
+            @media #{$breakpoint-ipad} {
+                font-size: 18px;
+                line-height: 20px;
+            }
             @media #{$breakpoint-phone} {
                 font-size: 16px;
                 line-height: 22px;
@@ -75,6 +108,9 @@
 
 .feature-get-leads {
     margin-top: 180px;
+    @media #{$breakpoint-ipad} {
+        margin-top: 100px;
+    }
     @media #{$breakpoint-phone} {
         margin-top: 20px;
     }

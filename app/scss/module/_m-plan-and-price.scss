@@ -5,7 +5,7 @@
 
     .type-of-plan {
         display: block;
-        @media #{$breakpoint-phone} {
+        @media #{$breakpoint-ipad} {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -30,6 +30,9 @@
             line-height: 30px;
             text-align: center;
             margin: 0 0 58px;
+            @media #{$breakpoint-ipad} {
+                margin: 0 0 35px;
+            }
             @media #{$breakpoint-phone} {
                 font-size: 16px;
                 line-height: 22px;
@@ -45,7 +48,7 @@
             background-color: $color-white;
             border-radius: 21.5px;
             color: $color-light-blue;
-            @media #{$breakpoint-phone} {
+            @media #{$breakpoint-ipad} {
                 position: static;
                 margin-bottom: 60px;
             }
