@@ -1,5 +1,8 @@
 .m-feature-keep-track {
     margin-top: 150px;
+    @media #{$breakpoint-phone} {
+        margin-top: 50px;
+    }
 
     .keep-track-title {
         text-align: center;

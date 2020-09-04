@@ -82,6 +82,9 @@
         display: flex;
         justify-content: flex-end;
     }
+    @media #{$breakpoint-phone} {
+        display: none;
+    }
 }
 
 .bg-right-bloc-4 {
@@ -93,6 +96,9 @@
     @media #{$breakpoint-ipad-pro} {
         display: flex;
         justify-content: flex-end;
+    }
+    @media #{$breakpoint-phone} {
+        display: none;
     }
 }
 
@@ -116,6 +122,9 @@
         right: -40px;
         display: flex;
         justify-content: flex-end;
+    }
+    @media #{$breakpoint-phone} {
+        display: none;
     }
 }
 

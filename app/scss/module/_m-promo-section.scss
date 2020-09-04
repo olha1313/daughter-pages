@@ -2,8 +2,12 @@
 
 .m-promo-section {
     padding-top: 50px;
+    margin-bottom: 60px;
     @media #{$breakpoint-ipad-pro} {
         margin-bottom: 60px;
+    }
+    @media #{$breakpoint-phone} {
+        margin-bottom: 0;
     }
 
     .promo-description {
@@ -35,7 +39,6 @@
             @media #{$breakpoint-phone} {
                 font-size: 44px;
                 line-height: 50px;
-                margin-bottom: 0;
             }
         }
 
@@ -78,45 +81,39 @@
         margin: 0;
         @media #{$breakpoint-phone} {
             display: block;
-            margin: 62px 0 155px;
+            margin: 62px 0 140px;
 
         }
     }
 
-    .promo-benefits {
-        margin: 10px 0;
+
+    .m-benefit-item {
+        padding: 0 34px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        @media #{$breakpoint-ipad-pro} {
+            padding: 0 20px;
+        }
         @media #{$breakpoint-ipad} {
-            margin: 40px 0;
+            padding: 0;
+        }
+        @media #{$breakpoint-phone} {
+            padding: 0 15px;
         }
 
-        .m-benefit-item {
-            padding: 0 34px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            @media #{$breakpoint-ipad-pro} {
-                padding: 0 20px;
-            }
+        p {
+            font-size: 22px;
+            line-height: 25px;
+            font-weight: bold;
             @media #{$breakpoint-ipad} {
-                padding: 0;
+                font-size: 18px;
+                line-height: 22px;
             }
             @media #{$breakpoint-phone} {
-                padding: 0 15px;
-            }
-
-            p {
-                font-size: 22px;
-                line-height: 25px;
-                font-weight: bold;
-                @media #{$breakpoint-ipad} {
-                    font-size: 18px;
-                    line-height: 22px;
-                }
-                @media #{$breakpoint-phone} {
-                    font-size: 12px;
-                    line-height: 14px;
-                }
+                font-size: 12px;
+                line-height: 14px;
             }
         }
     }
