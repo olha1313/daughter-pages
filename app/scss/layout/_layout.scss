@@ -13,7 +13,7 @@
 }
 
 
-.container-relative {
+.relative {
     position: relative;
 }
 
@@ -21,10 +21,74 @@
     position: relative;
 }
 
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+.item__clippath,
+.item__deco {
+	transform-origin: 50% 50%;
+}
+
+.bg-animation {
+    position: absolute;
+    display: block;
+    @media #{$breakpoint-ipad-pro} {
+        display: none;
+    }
+}
+
+.bg-animation-right-bloc-1 {
+    top: 0;
+    right: 0;
+}
+
+.bg-animation-right-bloc-3 {
+    right: 0;
+    top: -500px;
+}
+
+.bg-animation-right-bloc-4 {
+    right: 0;
+    top: -100px;
+}
+
+.bg-animation-center-bloc-8 {
+    top: -200px;
+}
+
 .bg-desktop {
     position: absolute;
-    z-index: -1;
     display: block;
+    @media #{$breakpoint-phone} {
+        display: none;
+    }
+    img {
+        width: 100%;
+        @media #{$breakpoint-ipad-pro} {
+            width: 80%;
+        }
+        @media #{$breakpoint-ipad} {
+            width: 60%;
+        }
+    }
+}
+
+.bg-ipad {
+    position: absolute;
+    display: none;
+    z-index: auto;
+    @media #{$breakpoint-ipad-pro} {
+        display: block;
+        z-index: -1;
+    }
+    @media #{$breakpoint-ipad} {
+        display: block;
+    }
     @media #{$breakpoint-phone} {
         display: none;
     }
@@ -66,7 +130,7 @@
     }
 }
 
-.bg-left-bloc-1 {
+.bg-left-bloc-1, .bg-animation-left-bloc-1 {
     left: 0;
     top: 600px;
     @media #{$breakpoint-desktop} {
@@ -102,7 +166,7 @@
     }
 }
 
-.bg-left-bloc-5 {
+.bg-left-bloc-5, .bg-animation-left-bloc-5 {
     left: 0;
     top: -20px;
     @media #{$breakpoint-desktop} {

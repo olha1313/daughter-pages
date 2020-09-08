@@ -7,17 +7,53 @@
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/flexboxgrid.css" />
         <link rel="stylesheet" href="css/main.css" />
+		<script>document.documentElement.className = 'js';</script>
     </head>
 
     <body>
+        <svg class="hidden">
+			<!-- All deco shapes -->
+			<defs>
+                <path id="deco1" d="M401.341 -402.776C597.322 -601.135 1109 -330.883 1031.18 -53.6498C953.36 223.583 894.167 564.878 638.548 654.679C382.93 744.48 68.0099 569.917 8.7081 305.553C-50.5937 41.1892 205.36 -204.417 401.341 -402.776Z" fill="#BFDACE" />
+                <path id="deco2" d="M-32.2995 70.291C-101.853 54.3986 -146.285 37.4549 -222.764 58.6213C-299.243 79.7877 -359.425 145.989 -367.086 263.581C-376.663 410.571 -263.472 351.423 -199.797 428.267C-136.122 505.11 -417.885 720.82 -415.99 854.74C-414.096 988.661 -197.328 978.94 -44.5414 942.423C108.245 905.906 243.651 984.151 312.399 1007.59C381.147 1031.02 493.708 1052.76 566.429 980.855C639.149 908.948 603.849 760.134 600.983 718.731C598.117 677.327 597.493 579.528 670.025 494.228C728.049 425.989 743.984 351.913 747.42 322.922C750.857 293.932 740.307 220.974 680.463 139.476C609.576 42.9386 500.297 -4.03132 403.308 0.27087C306.319 4.57303 218.937 78.9851 135.564 96.4686C52.1916 113.952 54.6423 90.1564 -32.2995 70.291Z" fill="#BFDACE" />
+                <path id="deco3" d="M704.111 144.522C556.325 116.055 442.844 43.7188 252.495 240.301C162.206 333.548 -73.7025 503.331 121.927 642.777C205.27 702.184 367.566 818.989 527.609 773.326C772.875 703.347 851.898 172.989 704.111 144.522Z" fill="#BFDACE" />
+                <path id="deco4" d="M537 0.209747C387 12.5078 258.254 -26.6687 127.74 213.838C65.8326 327.92 -115.767 554.857 110.141 636.597C206.384 671.42 394.101 740.31 535.984 653.315C753.419 519.994 687 -12.0883 537 0.209747Z" fill="#BFDACE" />
+                <path id="deco5" d="M-51.3697 62.3465C91.7104 -24.2154 264.859 -91.2341 537.032 379.008C681.366 628.378 599.379 827.091 288.979 884.478C196.195 901.633 64.4716 894.976 -50.3689 828.058C-317.586 672.351 -194.45 148.908 -51.3697 62.3465Z" fill="#BFDACE" />
+                <path id="deco6" d="M1072.23 709.806C1137.7 739.06 1183.99 752.259 1230.62 815.656C1277.24 879.054 1281.41 968.987 1210.27 1068.67C1121.34 1193.26 1070.6 1076.95 969.759 1100.51C868.919 1124.08 950.279 1468.97 860.858 1576.06C771.437 1683.15 606.275 1544.09 509.338 1422.1C412.401 1300.11 253.875 1281.39 184.084 1258.72C114.292 1236.05 10.9429 1185.49 0.603116 1083.36C-9.73664 981.226 115.898 882.316 145.349 850.587C174.8 818.858 239.501 740.191 238.103 627.348C236.985 537.074 273.008 467.559 289.321 442.048C305.635 416.536 361.882 363.955 462.747 334.307C582.224 299.189 699.541 327.37 773.471 389.552C847.4 451.734 867.698 564.766 922.199 629.36C976.699 693.954 990.382 673.238 1072.23 709.806Z" fill="#BFDACE" />
+                <path id="deco8" d="M446.478 56.2924C313.553 37.0129 231.862 17.6064 67.3602 36.75C-97.1421 55.8935 -250.109 122.685 -321.399 245.159C-410.512 398.252 -153.839 340.873 -61.7175 423.561C30.4043 506.248 -641.03 720.57 -700.772 860.461C-760.515 1000.35 -318.122 998.579 7.77698 966.357C333.675 934.135 569.997 1021.06 697.714 1048.18C825.431 1075.31 1042.44 1102.35 1223.44 1030.09C1404.43 957.823 1403.78 801.093 1417.64 757.755C1431.51 714.417 1476.67 612.287 1663.64 526.034C1813.22 457.031 1880.56 380.309 1901.27 350.174C1921.97 320.04 1935.29 243.462 1853.12 156.062C1755.78 52.5354 1557.38 -0.72511 1359.46 0.019202C1161.54 0.763507 950.382 90.1085 773.066 90.1085C592.114 90.1085 612.634 80.3918 446.478 56.2924Z" fill="#F0F4F8" />
+            </defs>
+		</svg>
         <section class="m-promo-section">
             <div class="bg-desktop bg-ovals-bloc-1">
                <img src="img/1-bloc-BG-ovals.svg" alt="Photo background">
             </div>
-            <div class="bg-desktop bg-right-bloc-1">
+
+            <div class="item bg-animation bg-animation-right-bloc-1" data-animation-path-duration="800" data-animation-path-easing="easeInOutCubic" data-path-elasticity="300" data-morph-path="M401.341 -402.776C597.322 -601.135 1109 -330.883 1031.18 -53.6498C953.36 223.583 894.167 564.878 638.548 654.679C382.93 744.48 68.0099 569.917 8.7081 305.553C-50.5937 41.1892 205.36 -204.417 401.341 -402.776Z" data-path-scaleX="0.8" data-path-scaleY="1.1" data-path-translateX="0" data-path-translateY="30" data-path-rotate="5" data-animation-deco-duration="1300" data-animation-deco-easing="easeOutQuad" data-deco-elasticity="300" data-deco-scaleX="0.8" data-deco-scaleY="0.9" data-deco-translateX="45" data-deco-translateY="45" data-deco-rotate=".1">
+                <svg class="item__svg" width="729" height="679" viewBox="0 0 729 679" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <clipPath>
+                        <path class="item__clippath" d="M401.341 -402.776C597.322 -601.135 1109 -330.883 1031.18 -53.6498C953.36 223.583 894.167 564.878 638.548 654.679C382.93 744.48 68.0099 569.917 8.7081 305.553C-50.5937 41.1892 205.36 -204.417 401.341 -402.776Z" fill="#BFDACE" />
+                    </clipPath>
+                    <g class="item__deco">
+                        <use xlink:href="#deco1" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="bg-ipad bg-right-bloc-1">
                 <img src="img/1-bloc-BG(part).svg" alt="Photo background">
             </div>
-            <div class="bg-desktop bg-left-bloc-1">
+            <div class="item bg-animation bg-animation-left-bloc-1" data-animation-path-duration="800" data-animation-path-easing="easeInOutCubic" data-path-elasticity="300" data-morph-path="M-32.2995 70.291C-101.853 54.3986 -146.285 37.4549 -222.764 58.6213C-299.243 79.7877 -359.425 145.989 -367.086 263.581C-376.663 410.571 -263.472 351.423 -199.797 428.267C-136.122 505.11 -417.885 720.82 -415.99 854.74C-414.096 988.661 -197.328 978.94 -44.5414 942.423C108.245 905.906 243.651 984.151 312.399 1007.59C381.147 1031.02 493.708 1052.76 566.429 980.855C639.149 908.948 603.849 760.134 600.983 718.731C598.117 677.327 597.493 579.528 670.025 494.228C728.049 425.989 743.984 351.913 747.42 322.922C750.857 293.932 740.307 220.974 680.463 139.476C609.576 42.9386 500.297 -4.03132 403.308 0.27087C306.319 4.57303 218.937 78.9851 135.564 96.4686C52.1916 113.952 54.6423 90.1564 -32.2995 70.291Z" data-path-scaleX="0.8" data-path-scaleY="1.1" data-path-translateX="0" data-path-translateY="30" data-path-rotate="5" data-animation-deco-duration="1300" data-animation-deco-easing="easeOutQuad" data-deco-elasticity="300" data-deco-scaleX="0.8" data-deco-scaleY="0.9" data-deco-translateX="-5" data-deco-translateY="-5" data-deco-rotate="2">
+                <svg class="item__svg" width="748" height="1030" viewBox="0 0 748 1030" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <clipPath>
+                        <path class="item__clippath" d="M-32.2995 70.291C-101.853 54.3986 -146.285 37.4549 -222.764 58.6213C-299.243 79.7877 -359.425 145.989 -367.086 263.581C-376.663 410.571 -263.472 351.423 -199.797 428.267C-136.122 505.11 -417.885 720.82 -415.99 854.74C-414.096 988.661 -197.328 978.94 -44.5414 942.423C108.245 905.906 243.651 984.151 312.399 1007.59C381.147 1031.02 493.708 1052.76 566.429 980.855C639.149 908.948 603.849 760.134 600.983 718.731C598.117 677.327 597.493 579.528 670.025 494.228C728.049 425.989 743.984 351.913 747.42 322.922C750.857 293.932 740.307 220.974 680.463 139.476C609.576 42.9386 500.297 -4.03132 403.308 0.27087C306.319 4.57303 218.937 78.9851 135.564 96.4686C52.1916 113.952 54.6423 90.1564 -32.2995 70.291Z" fill="#BFDACE" />
+                    </clipPath>
+                    <g class="item__deco">
+                        <use xlink:href="#deco2" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="bg-ipad bg-left-bloc-1">
                 <img src="img/1.1-bloc-BG(part).svg" alt="Photo background">
             </div>
             <div class="bg-mobile bg-mobile-center-bloc-1" alt="Photo background">
@@ -42,25 +78,25 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-3 col-xs-6">
-                        <div class="m-benefit-item">
+                        <div class="m-benefit-item relative">
                             <img src="img/automatic-lead-capture.svg" alt="Automatic lead capture tools">
                             <p>Automatic lead capture tools</p>
                         </div>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <div class="m-benefit-item">
+                        <div class="m-benefit-item relative">
                             <img src="img/lead-status-and-tracking.svg" alt="Lead status and tracking">
                             <p>Lead status and tracking</p>
                         </div>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <div class="m-benefit-item">
+                        <div class="m-benefit-item relative">
                             <img src="img/log-calls-and-notes.svg" alt="Log calls and add notes">
                             <p>Log calls and add notes</p>
                         </div>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <div class="m-benefit-item">
+                        <div class="m-benefit-item relative">
                             <img src="img/track-the-activity.svg" alt="Track the activity in a timeline">
                             <p>Track the activity in a timeline</p>
                         </div>
@@ -74,7 +110,7 @@
                 <div class="row">
                     <div class="col-sm-7 col-xs-12">
                         <div class="container-img">
-                            <img class="item-img img-photo" src="img/2-block-photo.png" alt="Database of Tenants">
+                            <img class="item-img img-photo relative" src="img/2-block-photo.png" alt="Database of Tenants">
                         </div>
                     </div>
                     <div class="col-sm-5 col-xs-12">
@@ -89,7 +125,19 @@
         </section>
 
         <section class="m-feature-keep-track section-relative">
-            <div class="bg-desktop bg-right-bloc-3">
+
+            <div class="item bg-animation bg-animation-right-bloc-3" data-animation-path-duration="800" data-animation-path-easing="easeInOutCubic" data-path-elasticity="300" data-morph-path="M704.111 144.522C556.325 116.055 442.844 43.7188 252.495 240.301C162.206 333.548 -73.7025 503.331 121.927 642.777C205.27 702.184 367.566 818.989 527.609 773.326C772.875 703.347 851.898 172.989 704.111 144.522Z" data-path-scaleX="0.8" data-path-scaleY="1.1" data-path-translateX="0" data-path-translateY="30" data-path-rotate="5" data-animation-deco-duration="1300" data-animation-deco-easing="easeOutQuad" data-deco-elasticity="300" data-deco-scaleX="0.8" data-deco-scaleY="0.9" data-deco-translateX="55" data-deco-translateY="55" data-deco-rotate="1">
+                <svg class="item__svg" width="372" height="852" viewBox="0 0 372 852" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <clipPath>
+                        <path class="item__clippath" d="M704.111 144.522C556.325 116.055 442.844 43.7188 252.495 240.301C162.206 333.548 -73.7025 503.331 121.927 642.777C205.27 702.184 367.566 818.989 527.609 773.326C772.875 703.347 851.898 172.989 704.111 144.522Z" fill="#BFDACE" />
+                    </clipPath>
+                    <g class="item__deco">
+                        <use xlink:href="#deco3" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="bg-ipad bg-right-bloc-3">
                 <img src="img/3-bloc-BG(part).svg" alt="Photo background">
             </div>
             <div class="container container-small">
@@ -125,7 +173,19 @@
         </section>
 
         <section class="m-new-feature feature-get-leads section-relative">
-            <div class="bg-desktop bg-right-bloc-4">
+
+            <div class="item bg-animation bg-animation-right-bloc-4" data-animation-path-duration="800" data-animation-path-easing="easeInOutCubic" data-path-elasticity="300" data-morph-path="M537 0.209747C387 12.5078 258.254 -26.6687 127.74 213.838C65.8326 327.92 -115.767 554.857 110.141 636.597C206.384 671.42 394.101 740.31 535.984 653.315C753.419 519.994 687 -12.0883 537 0.209747Z" data-path-scaleX="0.8" data-path-scaleY="1.1" data-path-translateX="0" data-path-translateY="30" data-path-rotate="5" data-animation-deco-duration="1300" data-animation-deco-easing="easeOutQuad" data-deco-elasticity="300" data-deco-scaleX="0.8" data-deco-scaleY="0.9" data-deco-translateX="45" data-deco-translateY="45" data-deco-rotate=".1">
+                <svg class="item__svg" width="534" height="696" viewBox="0 0 534 696" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <clipPath>
+                        <path class="item__clippath" d="M537 0.209747C387 12.5078 258.254 -26.6687 127.74 213.838C65.8326 327.92 -115.767 554.857 110.141 636.597C206.384 671.42 394.101 740.31 535.984 653.315C753.419 519.994 687 -12.0883 537 0.209747Z" fill="#BFDACE" />
+                    </clipPath>
+                    <g class="item__deco">
+                        <use xlink:href="#deco4" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="bg-ipad bg-right-bloc-4">
                 <img src="img/4-bloc-BG(part).svg" alt="Photo background">
             </div>
             <div class="bg-mobile bg-mobile-left-bloc-4">
@@ -142,7 +202,7 @@
                     </div>
                     <div class="col-sm-7 col-xs-12">
                         <div class="container-img">
-                            <img class="item-img img-ipad" src="img/iPad.svg" alt="iPad">
+                            <img class="item-img img-ipad relative" src="img/iPad.svg" alt="iPad">
                         </div>
                     </div>
                 </div>
@@ -150,13 +210,25 @@
         </section>
 
         <section class="m-new-feature feature-rentlar-leads-desktop section-relative">
-            <div class="bg-desktop bg-left-bloc-5">
+
+            <div class="item bg-animation bg-animation-left-bloc-5" data-animation-path-duration="800" data-animation-path-easing="easeInOutCubic" data-path-elasticity="300" data-morph-path="M-51.3697 62.3465C91.7104 -24.2154 264.859 -91.2341 537.032 379.008C681.366 628.378 599.379 827.091 288.979 884.478C196.195 901.633 64.4716 894.976 -50.3689 828.058C-317.586 672.351 -194.45 148.908 -51.3697 62.3465Z" data-path-scaleX="0.8" data-path-scaleY="1.1" data-path-translateX="0" data-path-translateY="30" data-path-rotate="5" data-animation-deco-duration="1300" data-animation-deco-easing="easeOutQuad" data-deco-elasticity="300" data-deco-scaleX="0.8" data-deco-scaleY="0.9" data-deco-translateX="-5" data-deco-translateY="-5" data-deco-rotate="2">
+                <svg class="item__svg" width="606" height="893" viewBox="0 0 606 893" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <clipPath>
+                        <path class="item__clippath" d="M-51.3697 62.3465C91.7104 -24.2154 264.859 -91.2341 537.032 379.008C681.366 628.378 599.379 827.091 288.979 884.478C196.195 901.633 64.4716 894.976 -50.3689 828.058C-317.586 672.351 -194.45 148.908 -51.3697 62.3465Z" fill="#BFDACE" />
+                    </clipPath>
+                    <g class="item__deco">
+                        <use xlink:href="#deco5" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="bg-ipad bg-left-bloc-5">
                 <img src="img/5-bloc-BG(part).svg" alt="Photo background">
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-7">
-                        <img class="item-img img-phones" src="img/phones.png" alt="Phones">
+                        <img class="item-img img-phones relative" src="img/phones.png" alt="Phones">
                     </div>
                     <div class="col-sm-5">
                         <div class="item-description">
@@ -170,9 +242,6 @@
         </section>
 
         <section class="m-new-feature feature-rentlar-leads-mobile section-relative">
-            <div class="bg-desktop bg-left-bloc-5">
-                <img src="img/5-bloc-BG(part).svg" alt="Photo background">
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -188,6 +257,18 @@
         </section>
 
         <section class="m-new-feature feature-convert-leads section-relative">
+
+            <!-- <div class="item bg-desktop bg-right-bloc-6" data-animation-path-duration="800" data-animation-path-easing="easeInOutCubic" data-path-elasticity="300" data-morph-path="M1072.23 709.806C1137.7 739.06 1183.99 752.259 1230.62 815.656C1277.24 879.054 1281.41 968.987 1210.27 1068.67C1121.34 1193.26 1070.6 1076.95 969.759 1100.51C868.919 1124.08 950.279 1468.97 860.858 1576.06C771.437 1683.15 606.275 1544.09 509.338 1422.1C412.401 1300.11 253.875 1281.39 184.084 1258.72C114.292 1236.05 10.9429 1185.49 0.603116 1083.36C-9.73664 981.226 115.898 882.316 145.349 850.587C174.8 818.858 239.501 740.191 238.103 627.348C236.985 537.074 273.008 467.559 289.321 442.048C305.635 416.536 361.882 363.955 462.747 334.307C582.224 299.189 699.541 327.37 773.471 389.552C847.4 451.734 867.698 564.766 922.199 629.36C976.699 693.954 990.382 673.238 1072.23 709.806Z" data-path-scaleX="0.8" data-path-scaleY="1.1" data-path-translateX="0" data-path-translateY="30" data-path-rotate="5" data-animation-deco-duration="1300" data-animation-deco-easing="easeOutQuad" data-deco-elasticity="300" data-deco-scaleX="0.8" data-deco-scaleY="0.9" data-deco-translateX="55" data-deco-translateY="55" data-deco-rotate="1">
+                <svg class="item__svg" width="802" height="1615" viewBox="0 0 802 1615" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <clipPath>
+                        <path class="item__clippath" d="M1072.23 709.806C1137.7 739.06 1183.99 752.259 1230.62 815.656C1277.24 879.054 1281.41 968.987 1210.27 1068.67C1121.34 1193.26 1070.6 1076.95 969.759 1100.51C868.919 1124.08 950.279 1468.97 860.858 1576.06C771.437 1683.15 606.275 1544.09 509.338 1422.1C412.401 1300.11 253.875 1281.39 184.084 1258.72C114.292 1236.05 10.9429 1185.49 0.603116 1083.36C-9.73664 981.226 115.898 882.316 145.349 850.587C174.8 818.858 239.501 740.191 238.103 627.348C236.985 537.074 273.008 467.559 289.321 442.048C305.635 416.536 361.882 363.955 462.747 334.307C582.224 299.189 699.541 327.37 773.471 389.552C847.4 451.734 867.698 564.766 922.199 629.36C976.699 693.954 990.382 673.238 1072.23 709.806Z" fill="#BFDACE" />
+                    </clipPath>
+                    <g class="item__deco">
+                        <use xlink:href="#deco6" />
+                    </g>
+                </svg>
+            </div> -->
+
             <div class="bg-desktop bg-right-bloc-6">
                 <img src="img/6-bloc-BG(part).svg" alt="Photo background">
             </div>
@@ -222,7 +303,7 @@
         </section>
 
         <section class="m-plan-and-price">
-            <div class="container container-relative">
+            <div class="container relative">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="type-of-plan">
@@ -264,7 +345,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-xs-12">
-                        <div class="container-relative">
+                        <div class="relative">
                             <div id="best-value">
                                 <span>Best value</span>
                             </div>
@@ -314,13 +395,25 @@
         </section>
 
         <section class="m-get-started section-relative">
-            <div class="bg-desktop bg-center-bloc-8">
+
+            <div class="item bg-animation bg-animation-center-bloc-8" data-animation-path-duration="800" data-animation-path-easing="easeInOutCubic" data-path-elasticity="300" data-morph-path="M446.478 56.2924C313.553 37.0129 231.862 17.6064 67.3602 36.75C-97.1421 55.8935 -250.109 122.685 -321.399 245.159C-410.512 398.252 -153.839 340.873 -61.7175 423.561C30.4043 506.248 -641.03 720.57 -700.772 860.461C-760.515 1000.35 -318.122 998.579 7.77698 966.357C333.675 934.135 569.997 1021.06 697.714 1048.18C825.431 1075.31 1042.44 1102.35 1223.44 1030.09C1404.43 957.823 1403.78 801.093 1417.64 757.755C1431.51 714.417 1476.67 612.287 1663.64 526.034C1813.22 457.031 1880.56 380.309 1901.27 350.174C1921.97 320.04 1935.29 243.462 1853.12 156.062C1755.78 52.5354 1557.38 -0.72511 1359.46 0.019202C1161.54 0.763507 950.382 90.1085 773.066 90.1085C592.114 90.1085 612.634 80.3918 446.478 56.2924Z" data-path-scaleX="0.8" data-path-scaleY="1.1" data-path-translateX="0" data-path-translateY="30" data-path-rotate="5" data-animation-deco-duration="1300" data-animation-deco-easing="easeOutQuad" data-deco-elasticity="300" data-deco-scaleX="0.8" data-deco-scaleY="0.9" data-deco-translateX="-2" data-deco-translateY="-2" data-deco-rotate="2">
+                <svg class="item__svg" width="1440" height="705" viewBox="0 0 1440 705" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <clipPath>
+                        <path class="item__clippath" d="M446.478 56.2924C313.553 37.0129 231.862 17.6064 67.3602 36.75C-97.1421 55.8935 -250.109 122.685 -321.399 245.159C-410.512 398.252 -153.839 340.873 -61.7175 423.561C30.4043 506.248 -641.03 720.57 -700.772 860.461C-760.515 1000.35 -318.122 998.579 7.77698 966.357C333.675 934.135 569.997 1021.06 697.714 1048.18C825.431 1075.31 1042.44 1102.35 1223.44 1030.09C1404.43 957.823 1403.78 801.093 1417.64 757.755C1431.51 714.417 1476.67 612.287 1663.64 526.034C1813.22 457.031 1880.56 380.309 1901.27 350.174C1921.97 320.04 1935.29 243.462 1853.12 156.062C1755.78 52.5354 1557.38 -0.72511 1359.46 0.019202C1161.54 0.763507 950.382 90.1085 773.066 90.1085C592.114 90.1085 612.634 80.3918 446.478 56.2924Z" fill="#F0F4F8" />
+                    </clipPath>
+                    <g class="item__deco">
+                        <use xlink:href="#deco8" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="bg-ipad bg-center-bloc-8">
                 <img src="img/8-bloc-BG(part).svg" alt="Photo background">
             </div>
             <div class="bg-mobile bg-mobile-center-bloc-8">
                 <img src="img/8-bloc-BG(part).svg"  alt="Photo background">
             </div>
-            <div class="container">
+            <div class="container relative">
                 <div class="row">
                     <div class="col-xs-12">
                         <h1 class="get-started-title">Help your business grow!</h1>
@@ -336,5 +429,7 @@
             </div>
         </section>
         <script src="js/index.js"></script>
+        <script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
     </body>
 </html>
